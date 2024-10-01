@@ -14,9 +14,6 @@
     "DownloadLinkInstall": "https://github.com/BumbleBeever/EurekaHelper/releases/download/v1.5.2.1/EurekaHelper.zip",
     "DownloadLinkTesting": "https://github.com/BumbleBeever/EurekaHelper/releases/download/v1.5.2.1/EurekaHelper.zip",
     "DownloadLinkUpdate": "https://github.com/BumbleBeever/EurekaHelper/releases/download/v1.5.2.1/EurekaHelper.zip",
-    "IconUrl": "https://github.com/BumbleBeever/EurekaHelper/blob/main/EurekaHelper/Resources/icon.png",
-    "Tags": [
-      "EurekaHelper"
-    ]
+    "IconUrl": "https://raw.githubusercontent.com/BumbleBeever/EurekaHelper/main/EurekaHelper/Resources/icon.png"
   }
 ]
