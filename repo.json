@@ -1,0 +1,22 @@
+[
+  {
+    "Author": "snorux, KangasZ, BumbleBeever",
+    "Name": "EurekaHelper",
+    "Punchline": "Eureka Tracker in a plugin with QoL features.",
+    "Description": "Eureka Tracker in a plugin with QoL features.",
+    "InternalName": "EurekaHelper",
+    "AssemblyVersion": "1.5.2.1",
+    "RepoUrl": "https://github.com/BumbleBeever/EurekaHelper",
+    "ApplicableVersion": "any",
+    "DalamudApiLevel": 10,
+    "IsTestingExclusive": "True",
+    "DownloadCount": 0,
+    "DownloadLinkInstall": "https://github.com/BumbleBeever/EurekaHelper/releases/download/v1.5.2.1/EurekaHelper.zip",
+    "DownloadLinkTesting": "https://github.com/BumbleBeever/EurekaHelper/releases/download/v1.5.2.1/EurekaHelper.zip",
+    "DownloadLinkUpdate": "https://github.com/BumbleBeever/EurekaHelper/releases/download/v1.5.2.1/EurekaHelper.zip",
+    "IconUrl": "https://github.com/BumbleBeever/EurekaHelper/blob/main/EurekaHelper/Resources/icon.png",
+    "Tags": [
+      "EurekaHelper"
+    ]
+  }
+]
