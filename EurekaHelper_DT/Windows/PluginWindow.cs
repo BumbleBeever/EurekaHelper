@@ -1062,7 +1062,7 @@ namespace EurekaHelper_DT.Windows
 
             ImGui.TextColored(new Vector4(0.0f, 1.0f, 1.0f, 1.0f), "Information:");
             ImGui.Indent();
-            ImGui.Text("GitHub:"); ImGui.SameLine(); Utils.TextURL("GitHub", "https://github.com/snorux/EurekaHelper_DT", ImGui.GetColorU32(ImGuiCol.Text));
+            ImGui.Text("GitHub:"); ImGui.SameLine(); Utils.TextURL("GitHub", "https://github.com/snorux/EurekaHelper", ImGui.GetColorU32(ImGuiCol.Text));
             ImGui.Text("Last commit:"); ImGui.SameLine(); ImGui.Text(Utils.GetGitSha());
             ImGui.Text("Version:"); ImGui.SameLine(); ImGui.Text(Utils.GetVersion());
             ImGui.Unindent();
@@ -1071,13 +1071,13 @@ namespace EurekaHelper_DT.Windows
             ImGui.TextColored(new Vector4(1.0f, 0.7f, 0.06f, 1.0f), "Contact:");
             ImGui.Indent();
             ImGui.Text("Discord:"); ImGui.SameLine(); ImGui.Text("@snorux");
-            ImGui.Text("Issues / Feedbacks:"); ImGui.SameLine(); Utils.TextURL("GitHub", "https://github.com/snorux/EurekaHelper_DT/issues", ImGui.GetColorU32(ImGuiCol.Text));
+            ImGui.Text("Issues / Feedbacks:"); ImGui.SameLine(); Utils.TextURL("GitHub", "https://github.com/snorux/EurekaHelper/issues", ImGui.GetColorU32(ImGuiCol.Text));
             ImGui.Unindent();
             ImGui.Dummy(new Vector2(0.0f, 10.0f));
 
             ImGui.TextColored(ImGuiColors.ParsedPurple, "Commands");
             ImGui.Indent();
-            ImGui.Text("/EurekaHelper_DT | /eh | /ehelper → Opens / Closes the configuration window");
+            ImGui.Text("/EurekaHelper | /eh | /ehelper → Opens / Closes the configuration window");
             ImGui.Text("/etrackers → Attempts to get a tracker for the current instance in the same datacenter.");
             ImGui.Text("/erelic → Opens / Closes the Eureka Relic helper window");
             ImGui.Text("/ealarms → Opens / Closes the Eureka Alarms window");
@@ -1090,7 +1090,7 @@ namespace EurekaHelper_DT.Windows
             ImGui.Text("FFXIV Dev community");
             ImGui.Text("electr0sheep for EurekaTrackerAutoPopper");
             ImGui.Text("Bedo9041 for EurekaPlugin");
-            ImGui.Text("KangasZ for EurekaHelper_DT contributions");
+            ImGui.Text("KangasZ for EurekaHelper contributions");
         }
 
         public static EurekaConnectionManager GetConnection() => Connection;

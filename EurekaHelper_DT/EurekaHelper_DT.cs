@@ -60,7 +60,7 @@ namespace EurekaHelper_DT
             DalamudApi.PluginInterface.UiBuilder.OpenConfigUi += DrawConfigUI;
         }
 
-        [Command("/EurekaHelper_DT")]
+        [Command("/EurekaHelper")]
         [Aliases("/ehelper", "/eh")]
         [HelpMessage("Opens / Closes the configuration window")]
         private void ToggleConfig(string command, string argument) => DrawConfigUI();
