@@ -14,7 +14,7 @@
     "DownloadLinkInstall": "https://github.com/BumbleBeever/EurekaHelper/releases/download/v1.5.2.1/EurekaHelper_DT.zip",
     "DownloadLinkTesting": "https://github.com/BumbleBeever/EurekaHelper/releases/download/v1.5.2.1/EurekaHelper_DT.zip",
     "DownloadLinkUpdate": "https://github.com/BumbleBeever/EurekaHelper/releases/download/v1.5.2.1/EurekaHelper_DT.zip",
-    "IconUrl": "https://raw.githubusercontent.com/BumbleBeever/EurekaHelper/main/EurekaHelper/Resources/icon.png",
+    "IconUrl": "https://raw.githubusercontent.com/BumbleBeever/EurekaHelper/main/EurekaHelper_DT/Resources/icon.png",
     "Tags": [
       "EurekaHelper", "Eureka", "Tracker"
     ]
