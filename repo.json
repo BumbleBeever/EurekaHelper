@@ -9,7 +9,7 @@
     "RepoUrl": "https://github.com/BumbleBeever/EurekaHelper",
     "ApplicableVersion": "any",
     "DalamudApiLevel": 10,
-    "IsTestingExclusive": "True",
+    "IsTestingExclusive": "False",
     "DownloadCount": 0,
     "DownloadLinkInstall": "https://github.com/BumbleBeever/EurekaHelper/releases/download/v1.5.2.1/EurekaHelper_DT.zip",
     "DownloadLinkTesting": "https://github.com/BumbleBeever/EurekaHelper/releases/download/v1.5.2.1/EurekaHelper_DT.zip",
