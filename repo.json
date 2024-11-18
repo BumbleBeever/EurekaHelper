@@ -8,7 +8,7 @@
     "AssemblyVersion": "1.6.0.0",
     "RepoUrl": "https://github.com/BumbleBeever/EurekaHelper",
     "ApplicableVersion": "any",
-    "DalamudApiLevel": 10,
+    "DalamudApiLevel": 11,
     "IsTestingExclusive": "False",
     "DownloadCount": 0,
     "DownloadLinkInstall": "https://github.com/BumbleBeever/EurekaHelper/releases/download/v1.6.0.0/EurekaHelper_DT.zip",
