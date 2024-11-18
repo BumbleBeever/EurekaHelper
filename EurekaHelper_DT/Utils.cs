@@ -14,9 +14,9 @@ using System.Numerics;
 using FFXIVClientStructs.FFXIV.Client.UI.Agent;
 using System.Collections.Generic;
 using Lumina.Data.Parsing.Layer;
-using Lumina.Excel.GeneratedSheets;
 using Lumina.Data.Files;
 using Dalamud.Utility;
+using Lumina.Excel.Sheets;
 
 namespace EurekaHelper_DT
 {
@@ -98,12 +98,12 @@ namespace EurekaHelper_DT
             {
                 List<LayerCommon.InstanceObject> eventData = new();
 
-                var territoryType = DalamudApi.DataManager.GetExcelSheet<TerritoryType>()!.GetRow(zone);
+                var territoryType = DalamudApi.DataManager.GetExcelSheet<TerritoryType>()!.GetRowOrDefault(zone);
 
                 if (territoryType == null)
                     continue;
 
-                var bg = territoryType.Bg.ToString();
+                var bg = territoryType.Value.Bg.ToString();
                 if (string.IsNullOrWhiteSpace(bg))
                     continue;
 
@@ -131,7 +131,7 @@ namespace EurekaHelper_DT
             if (!LgbEventData.TryGetValue(territoryId, out var eventData))
                 return;
 
-            var territoryType = DalamudApi.DataManager.GetExcelSheet<TerritoryType>()!.GetRow(territoryId);
+            var territoryType = DalamudApi.DataManager.GetExcelSheet<TerritoryType>()!.GetRowOrDefault(territoryId);
 
             if (territoryType == null)
                 return;
@@ -147,7 +147,7 @@ namespace EurekaHelper_DT
 
                 var match = eventData.Find(x => x.InstanceId == fateSheetData.Location);
 
-                var vector = MapUtil.WorldToMap(new Vector2(match.Transform.Translation.X, match.Transform.Translation.Z), territoryType.Map.Value);
+                var vector = MapUtil.WorldToMap(new Vector2(match.Transform.Translation.X, match.Transform.Translation.Z), territoryType.Value.Map.Value);
 
                 fate.FatePosition = vector;
             }
@@ -299,10 +299,10 @@ namespace EurekaHelper_DT
                     instance->AddGatheringTempMarker(mapPayload.RawX / 1000, mapPayload.RawY / 1000, Constants.MapCircleRadius);
                 }
 
-                instance->SetFlagMapMarker(mapPayload.Map.TerritoryType.Row, mapPayload.Map.RowId, mapPayload.RawX / 1000f, mapPayload.RawY / 1000f);
+                instance->SetFlagMapMarker(mapPayload.Map.Value.TerritoryType.Value.RowId, mapPayload.Map.RowId, mapPayload.RawX / 1000f, mapPayload.RawY / 1000f);
 
                 if (openMap)
-                    instance->OpenMap(mapPayload.Map.RowId, mapPayload.Map.TerritoryType.Row, type: drawCircle ? FFXIVClientStructs.FFXIV.Client.UI.Agent.MapType.GatheringLog : FFXIVClientStructs.FFXIV.Client.UI.Agent.MapType.FlagMarker);
+                    instance->OpenMap(mapPayload.Map.RowId, mapPayload.Map.Value.TerritoryType.Value.RowId, type: drawCircle ? FFXIVClientStructs.FFXIV.Client.UI.Agent.MapType.GatheringLog : FFXIVClientStructs.FFXIV.Client.UI.Agent.MapType.FlagMarker);
             }
         }
 

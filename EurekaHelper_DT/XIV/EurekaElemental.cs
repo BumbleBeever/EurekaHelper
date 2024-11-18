@@ -1,9 +1,9 @@
 ﻿using Dalamud.Game.Text.SeStringHandling;
 using Dalamud.Game.Text.SeStringHandling.Payloads;
 using Dalamud.Utility;
-using Lumina.Excel.GeneratedSheets;
 using System;
 using System.Numerics;
+using Lumina.Excel.Sheets;
 
 namespace EurekaHelper_DT.XIV
 {
